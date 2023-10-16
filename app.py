@@ -51,7 +51,7 @@ def function_to_run_on_click(value):
     st.write(f"**{value}** stars!")
 with st.echo(): 
     stars = st_star_rating(label, amount_of_stars, default_value, size, emoticons, read_only, dark_theme, resetButton=reset_btn, resetLabel=reset_label,
-                           customCSS=css_custom, on_click=function_to_run_on_click if enable_on_click else None, on_click_kwargs={"value": "stars"})
+                           customCSS=css_custom, on_click=function_to_run_on_click if enable_on_click else None)
     st.write(stars)
 
 
